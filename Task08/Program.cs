@@ -10,10 +10,11 @@ if (number < 1)
     Console.WriteLine("Введите пожалуйста натуральное число:");
     number = Convert.ToInt32(Console.ReadLine());
 }
-int count = number;
+int count = 2;
 
-while (count > 1)
+while (number >= count )
 {
+    
     Console.Write(count + " ");
-    count -= 2;
+    count += 2;
 }
