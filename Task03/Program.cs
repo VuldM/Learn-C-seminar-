@@ -31,6 +31,6 @@ if (number== 8) {
 if (number== 9) {
     Console.WriteLine("Неделя");
 }
-if (number > 9) {
+if ((number > 9)|(number < 1)) {
     Console.WriteLine("С таким числом дня недели нет");
 }
