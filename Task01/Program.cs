@@ -4,15 +4,15 @@
 // a = 2, b = 10 -> no
 // a = 9, b = -> -3 yes 
 // a = -3, b = 9 - > no
-Console.WriteLine("Введите целое число");
+Console.WriteLine("Введите первое число:");
 int numberA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите целое число");
+Console.WriteLine("Введите второе число:");
 int numberB = Convert.ToInt32(Console.ReadLine());
 if (numberA == numberB * numberB)
 {
-    console.WriteLine("yes");
+    Console.WriteLine("Второе число являеться квадратом первого числа");
 }
 else
 {
-    Console.WriteLine("No");
+    Console.WriteLine("Второе число не является квадратом первого числа");
 }
