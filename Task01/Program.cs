@@ -5,6 +5,14 @@
 // a = 9, b = -> -3 yes 
 // a = -3, b = 9 - > no
 Console.WriteLine("Введите целое число");
-int number = Convert.ToInt32(Console.ReadLine());
-int square = number * number;
-Console.WriteLine($"Квадрет числа {number} = {square}")
+int numberA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите целое число");
+int numberB = Convert.ToInt32(Console.ReadLine());
+if (numberA == numberB * numberB)
+{
+    console.WriteLine("yes");
+}
+else
+{
+    Console.WriteLine("No");
+}
