@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программму, которая будет выдавать
+//  название дня недели по заданному номеру.
+//  3 -> Среда
+//  5-> Пятница
