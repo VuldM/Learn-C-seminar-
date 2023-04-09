@@ -11,5 +11,5 @@ if (number %2 == 0)
     Console.WriteLine("Ваше число четное");
 }
 else{
-    Console.WriteLine("Ваше число нечетное");
+    Console.WriteLine("Ваше число не является четным");
 }
