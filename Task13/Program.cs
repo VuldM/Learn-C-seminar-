@@ -4,15 +4,21 @@
 // 32679 -> 6
 Console.WriteLine("Введите трехзначное число:");
 int number = Convert.ToInt32(Console.ReadLine());
-while (number < 100)
+if (number <= 99) 
 {
-    Console.WriteLine("Третьей цифры нет");
-    number = Convert.ToInt32(Console.ReadLine());
+      Console.WriteLine("третьей цифры нет");
 }
-while (number < 99 || number >  1000)
+else
+{
+    while (number > 1000 )
 {
     Console.WriteLine("Работает");
-    number = number / 10;
+    number = number / 10;      
 }
-    Console.WriteLine(number);
 Console.WriteLine($" - > {number % 10}");
+
+}
+
+// У меня не работает форматирование кода, такой команды нет когда нажимаю правую  кнопку мыши.
+
+
