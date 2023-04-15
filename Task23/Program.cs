@@ -6,3 +6,18 @@
 // 3 | 27
 // 4 | 64
 // 5 | 125
+
+void TabSquare(int num)
+{
+    int count = 1;
+    while (count <= num)
+    {
+        int  count3 = Convert.ToInt32(Math.Pow(count, 3));
+        // int  count3 = (int) Math.Pow(count, 3);
+        Console.WriteLine($" {count, 3} {count3, 3}");
+        count++;
+    }    
+}
+Console.WriteLine("Введите число");
+int digit = Convert.ToInt32(Console.ReadLine());
+TabSquare(digit);
