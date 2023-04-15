@@ -27,7 +27,7 @@ double DistanceAB(int xa, int ya, int xb, int yb)
 {
     int deltaX = xa - xb;
     int deltaY = ya - yb;
-    double distAB = Math.Sqrt(deltaX * deltaX + deltaY * deltaY);   
+    double distAB = Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
     return distAB;
 }
 
@@ -46,5 +46,5 @@ Console.Write("Yb: ");
 int yBCoordinate = Convert.ToInt32(Console.ReadLine());
 
 double distanceAB = DistanceAB(xACoordinate, yACoordinate, xBCoordinate, yBCoordinate);
-double distRound = Math.Round (distanceAB, 2, MidpointRounding.ToZero);
+double distRound = Math.Round(distanceAB, 2, MidpointRounding.ToZero);
 Console.WriteLine(distRound);
