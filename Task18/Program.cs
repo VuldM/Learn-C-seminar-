@@ -8,7 +8,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 string range = Range(number);
 
-Console.WriteLine(range == null ? "Не корректный ввод" : range);
+Console.WriteLine(range == "0" ? "Не корректный ввод" : range);
 
 string Range(int num)
 {
@@ -16,7 +16,7 @@ string Range(int num)
     if (num == 2) return "x меньше 0, y больше 0";
     if (num == 3) return "x меньше 0, y меньше 0";
     if (num == 4) return "x больше 0, y меншье 0";
-    return null;
+    return "0";
 }
 
 // double d = Math.Round(Math.Sqrt(5), 2);
