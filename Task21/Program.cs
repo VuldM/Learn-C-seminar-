@@ -13,21 +13,21 @@ double Diagonal (int xA, int yA, int zA, int xB, int yB, int zB)
 }
 
 Console.WriteLine("Введите координаты точки А");
-Console.Write("X: ", 2);
+Console.Write("X: ");
 int xACoordinate = Convert.ToInt32(Console.ReadLine());
-Console.Write("Y: ", 2);
+Console.Write("Y: ");
 int yACoordinate = Convert.ToInt32(Console.ReadLine());
-Console.Write("Z: ", 2);
+Console.Write("Z: ");
 int zACoordinate = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите координаты точки В");
-Console.Write("X: ",2);
+Console.Write("X: ");
 int xBCoordinate = Convert.ToInt32(Console.ReadLine());
-Console.Write("Y: ",2);
+Console.Write("Y: ");
 int yBCoordinate = Convert.ToInt32(Console.ReadLine());
-Console.Write("Z: ", 2);
+Console.Write("Z: ");
 int zBCoordinate = Convert.ToInt32(Console.ReadLine());
  
 double diagonal = Diagonal(xACoordinate, yACoordinate, zACoordinate, xBCoordinate, yBCoordinate, zBCoordinate);
-double diagonalRaund = Math.Round(diagonal, 2, MidpointRounding.ToZero);
+double diagonalRound = Math.Round(diagonal, 2, MidpointRounding.ToZero);
 
-Console.WriteLine(diagonalRaund);
+Console.WriteLine(diagonalRound);
