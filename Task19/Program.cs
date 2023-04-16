@@ -18,7 +18,7 @@ bool Palindrome(int num)
  Console.WriteLine("Введите пятизначное число");
  int number = Convert.ToInt32(Console.ReadLine());
  
- if(number / 10000 > 0 && number / 10000 < 10)
+ if(number / 10000 > 0 | number / 10000 < 10)
   {     
      bool Rez = Palindrome(number);
 Console.WriteLine(Rez ? "Да" : "Нет");
@@ -28,6 +28,6 @@ Console.WriteLine(Rez ? "Да" : "Нет");
 
  Console.WriteLine("Ваше число не пятизначное");
   }
-   Console.WriteLine($"{number/10000} ");
+   //Console.WriteLine($"{number/10000} {number/10000}");
 
 
