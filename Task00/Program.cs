@@ -9,3 +9,5 @@ Console.WriteLine("Введите целое число");
 int number = Convert.ToInt32(Console.ReadLine());
 int square = number * number;
 Console.WriteLine($"Квадрет числа {number} = {square}");
+
+// созать файл .gitignore команда: dotnet new gitignore
