@@ -5,22 +5,22 @@
 // 4 -> 10
 // 8 -> 36
 
-Console.WriteLine("Введите целое положительное чиислоЖ ");
+Console.WriteLine("Введите целое положительное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int sumNumber = SumNumber(number);
-int SumNumber(int num)
+int sumNumbers = SumNumbers(number);
+int SumNumbers(int num)
 {
     int sum = 0;
-    for (int i = 0; i <= num; i++)
+    for (int i = 1; i <= num; i++)
     {
-        checked
+        checked  // обработка переполнения типа
         {
             sum += i;
         }
     }
     return sum;
 }
-Console.WriteLine($"Сумма чисел от 1 до {number} = {sumNumber}.");
+Console.WriteLine($"Сумма чисел от 1 до {number} = {sumNumbers}.");
 
 
 // Console.WriteLine("Введите целое положительное число:");

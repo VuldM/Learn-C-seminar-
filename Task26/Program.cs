@@ -4,7 +4,7 @@
 // 78 -> 2
 // 89126 -> 5
 
-Console.WriteLine("Введите целое положительное чиисло ");
+Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int length = Length(number);
 Console.WriteLine(length);

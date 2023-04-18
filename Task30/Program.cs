@@ -23,25 +23,26 @@
 // }
 
 // Console.Write($"{array[i]}");
-int[] CreateArray(int size)
+int[] CreateArray(int sze)//  Если массив создается в методе то его надо вернуть оператором ретурн
 {
-    int[] array = new int[size];
-    for (int i = 0; i < array.Length; i++)
+    int[] arr = new int[sze];
+    Random rnd = new Random(); //var rnd = new Random()ж или так
+    for (int i = 0; i < arr.Length; i++)
     {
-        array[i] = new Random().Next(0, 2);
+        arr[i] = rnd.Next(0, 2);
     }
-    return array;
+    return arr;
 }
 
-void PrintArray(int[] array)
+void PrintArray(int[] arra) // Если в методе ничего не создается, то можно использовать войд метод
 {
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < arra.Length; i++)
     {
-        Console.Write($"{array[i]}");
+        Console.Write($"{arra[i]} ");
     }
 }
 
 Console.WriteLine("Please enter array length: ");
 int size = Convert.ToInt32(Console.ReadLine());
-int[] arr = CreateArray(size);
-PrintArray(arr);
+int[] array = CreateArray(size);
+PrintArray(array);
