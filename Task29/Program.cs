@@ -30,11 +30,10 @@ void PrintArray(int[] arra) // Если в методе ничего не соз
          if(i < arra.Length - 1)  Console.Write($"{arra[i]}, ");  
          if(i == arra.Length - 1)  Console.Write($"{arra[i]}"); 
     }
-     Console.Write($"]"); 
-
+     Console.WriteLine($"]"); 
 }
 
-Console.WriteLine("Please enter array length: ");
+Console.WriteLine("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] array = CreateArray(size);
 PrintArray(array);
