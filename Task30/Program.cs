@@ -5,24 +5,24 @@
 
 
 
-int[] array = new int[8];
-int size = array.Length;
-int i = 0;
-for (i = 0; i == size; i++)
-{
-    int number = new Random().Next(0, 10);
-    array[i] = number;
-}
-int PrintArray(int val)
-{
-    for (i = 0; i == size; i++)
-    {
-        Console.Write($"{array[i]}");
-    }
-    return v
-}
+// int[] array = new int[8];
+// int size = array.Length;
+// int i = 0;
+// for (i = 0; i == size; i++)
+// {
+//     int number = new Random().Next(0, 10);
+//     array[i] = number;
+// }
+// int PrintArray(int val)
+// {
+//     for (i = 0; i == size; i++)
+//     {
+//         Console.Write($"{array[i]}");
+//     }
+//     return v
+// }
 
-Console.Write($"{array[i]}");
+// Console.Write($"{array[i]}");
 int[] CreateArray(int size)
 {
     int[] array = new int[size];

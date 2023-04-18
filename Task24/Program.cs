@@ -20,7 +20,7 @@ int SumNumber(int num)
     }
     return sum;
 }
-Console.WriteLine($"сумму чисел от 1 до {number} = {sumNumber}.");
+Console.WriteLine($"Сумма чисел от 1 до {number} = {sumNumber}.");
 
 
 // Console.WriteLine("Введите целое положительное число:");
