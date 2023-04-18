@@ -21,8 +21,8 @@ else
 
 int DegreeNumber(int numA, int numB)
 {     
-    int num = numA;
-    for (int i = 1; i < numB; i++)
+    int num = 1;
+    for (int i = 0; i < numB; i++)
     {
           num = num * numA;
     }

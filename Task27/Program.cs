@@ -11,12 +11,12 @@ Console.WriteLine($"{number} -> {summa}");
 int SumDigit(int num)
 {   
     int rezult = 0;
-    int numA = 0;
-   while(num != 0)
+
+   while(num != 0)// условие окончания цикла
    {      
-     numA = num % 10;
-     num = num / 10; 
-     rezult = rezult + numA ;
+    rezult = rezult + num % 10;
+    num = num / 10; 
+   
    }
    return rezult;
 }
