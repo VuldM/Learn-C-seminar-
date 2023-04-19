@@ -17,19 +17,19 @@ int[] CreateArray(int sze)//  Если массив создается в мет
 
 void PrintArray(int[] arra) // Если в методе ничего не создается, то можно использовать войд метод
 {
-    for (int i = 0; i < arra.Length; i++)
+    for (int i = 0; i < arra.Length-1; i++)
     {
-      if(i < arra.Length - 1)  Console.Write($"{arra[i]}, ");  
-    if(i == arra.Length - 1)  Console.Write($"{arra[i]} ");      
-   
+      Console.Write($"{arra[i]}, ");  
+         
     }           
-    
+     Console.Write($"{arra[i]} ");  
      Console.Write(" -> ["); 
-    for (int i = 0; i < arra.Length; i++)
+    for (int i = 0; i < arra.Length-1; i++)
     {
-         if(i < arra.Length - 1)  Console.Write($"{arra[i]}, ");  
-         if(i == arra.Length - 1)  Console.Write($"{arra[i]}"); 
+       Console.Write($"{arra[i]}, ");  
+        
     }
+       Console.Write($"{arra[i]}"); 
      Console.WriteLine($"]"); 
 }
 
