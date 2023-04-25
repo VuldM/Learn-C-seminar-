@@ -35,4 +35,5 @@ int[] array = CreateArrayRndInt(5, -9, 9);
 PrintArray(array);
 Console.WriteLine();
 int[] newArray = CreateCopyArray(array);
+//newArray[0] = 10;
 PrintArray(newArray);
