@@ -4,14 +4,14 @@
 // Теорема о неравенстве треугольника: каждая сторона треугольника
 // меньше суммы двух других сторон.
 
-Console.WriteLine("Please enter first number: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Please enter second number: ");
-int number2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Please enter third number: ");
-int number3 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите длину стороны АВ: ");
+int numberAB = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите длину стороны ВС: ");
+int numberBC = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите длину стороны СА: ");
+int numberCA = Convert.ToInt32(Console.ReadLine());
 
-bool triangleSearch = TriangleSearch(number1, number2, number3);
+bool triangleSearch = TriangleSearch(numberAB, numberBC, numberCA);
 Console.WriteLine(triangleSearch ? "такой треугольник существует" : "такой треугольник не существует");
 
 bool TriangleSearch(int num1, int num2, int num3)
