@@ -38,3 +38,5 @@ Console.WriteLine("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] array = CreateArray(size);
 PrintArray(array);
+Console.Write("Press any key to continue...");
+Console.ReadKey(true);

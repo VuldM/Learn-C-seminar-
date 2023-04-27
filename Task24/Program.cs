@@ -21,7 +21,9 @@ int SumNumbers(int num)
     return sum;
 }
 Console.WriteLine($"Сумма чисел от 1 до {number} = {sumNumbers}.");
-
+Console.WriteLine();
+Console.Write("Нажмите любую клавишу для завершения...");
+Console.ReadKey(true);
 
 // Console.WriteLine("Введите целое положительное число:");
 // long number = Convert.ToInt64(Console.ReadLine());

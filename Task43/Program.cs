@@ -35,3 +35,5 @@ double x = Math.Round(corX, 1);
 double corY = PointY(numberB1, numberK1, numberB2, numberK2);
 double y = Math.Round(corY, 1);
 Console.WriteLine($"b1 = {numberB1}, k1 = {numberK1}, b2 = {numberB2}, k2 = {numberK2} -> ({x}; {y})");
+Console.Write("Нажмите любую клавишу для завершения...");
+Console.ReadKey(true);
