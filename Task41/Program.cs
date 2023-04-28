@@ -42,4 +42,4 @@ PrintArray(inputNumbers);
 int summa = SumPositive(inputNumbers);
 Console.WriteLine($" -> {summa}");
 Console.Write("Нажмите любую клавишу для завершения...");
-Console.ReadKey(true);256
+Console.ReadKey(true);

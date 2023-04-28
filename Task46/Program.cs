@@ -1,39 +1,39 @@
-﻿// Задача 45: Напишите программу, которая будет создавать
-// копию заданного массива с помощью поэлементного
-// копирования.
+﻿// Задача 46: Задайте двумерный массив размером m×n,
+// заполненный случайными целыми числами.
+// m = 3, n = 4.
+// 1 4 8 19
+// 5 -2 33 -2
+// 77 3 8 1
 
-int[] CreateArrayRndInt(int size, int min, int max)
+
+int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
-    int[] arr = new int[size];
+    //                        0       1
+    int[,] matrix = new int[rows, columns]; // 3, 4
     Random rnd = new Random();
 
-    for (int i = 0; i < arr.Length; i++)
+    for (int i = 0; i < matrix.GetLength(0); i++) //matrix.GetLength(0) = 3
     {
-        arr[i] = rnd.Next(min, max + 1);
+        for (int j = 0; j < matrix.GetLength(1); j++) // matrix.GetLength(1) = 4
+        {
+            matrix[i, j] = rnd.Next(min, max + 1);
+        }
     }
-    return arr;
-}
-void PrintArray(int[] arr)
-{
-    for (int i = 0; i < arr.Length; i++)
-    {
-        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
-        else Console.Write($"{arr[i]}");
-    }
-}
-int[] CreateCopyArray(int[] arr)
-{
-    int[] newArr = new int[arr.Length];
-    for (int i = 0; i < arr.Length; i++)
-    {
-        newArr[i] = arr[i];
-    }
-    // newArr[newArr.Length - 1] = 10;
-    return newArr;
+    return matrix;
 }
 
-int[] array = CreateArrayRndInt(5, -9, 9);
-PrintArray(array);
-Console.WriteLine();
-int[] newArray = CreateCopyArray(array);
-PrintArray(newArray);
+void PrintMatrix(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        Console.Write("|");
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($"{matrix[i, j],3} ");
+        }
+        Console.WriteLine(" |");
+    }
+}
+
+int[,] array2d = CreateMatrixRndInt(3, 4, -100, 100);
+PrintMatrix(array2d);
