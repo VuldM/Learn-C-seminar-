@@ -66,6 +66,5 @@ void PrintArray(double[] arr)
 int[,] array2d = CreateMatrixRndInt(3, 4, 0, 10);
 PrintMatrix(array2d);
 double[] columnAverageVal = ColumnAverageVal(array2d);
-
 Console.Write("Среднее арифметическое каждого столбца: ");
 PrintArray(columnAverageVal);
