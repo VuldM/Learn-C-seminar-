@@ -33,3 +33,5 @@ return y;
 double x = PointX(numberB1, numberK1, numberB2, numberK2);
 double y = PointY(numberB1, numberK1, numberB2, numberK2);
 Console.WriteLine($"b1 = {numberB1}, k1 = {numberK1}, b2 = {numberB2}, k2 = {numberK2} -> ({x}; {y})");
+Console.Write("Press any key to continue...");
+Console.ReadKey(true);
