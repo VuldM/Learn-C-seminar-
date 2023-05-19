@@ -54,7 +54,7 @@ int[] FindMinPosition(int[,] matrix)
          }
       }
    }
-   return new int[]{position1,position2};
+   return new int[]{position1,position2,min};
 }
 int[,] CreateNewMatrix(int[,] matrix,int row, int column)
 {
@@ -79,11 +79,12 @@ int[,] CreateNewMatrix(int[,] matrix,int row, int column)
 
 }
 
-
-
 int[,] matrix = CreateMatrixRndInt(4, 4, -10, 10);
 PrintMatrix(matrix);
 Console.WriteLine();
 int[] pos = FindMinPosition(matrix);
+int min = pos[2];
 int[,] newMatrix = CreateNewMatrix(matrix, pos[0],pos[1]);
+Console.WriteLine(min);
+Console.WriteLine();
 PrintMatrix(newMatrix);
