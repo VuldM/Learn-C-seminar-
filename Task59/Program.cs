@@ -46,7 +46,7 @@ int[] FindMinPosition(int[,] matrix)
    {
       for (int j = 0; j <matrix.GetLength(1); j++)
       {
-         if (matrix[i,j]<min) 
+         if (matrix[i, j] < min) 
          {
             min = matrix[i, j];
             position1 = i;

@@ -69,7 +69,7 @@ void FindNumbers(int[] array)
 }
 
 
-int[,] matrix = CreateMatrixRndInt(4, 4, -10, 10);
+int[,] matrix = CreateMatrixRndInt(4, 4, 1, 10);
 PrintMatrix(matrix);
 Console.WriteLine();
 int[] array=MatrixToArray(matrix);

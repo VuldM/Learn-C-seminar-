@@ -40,9 +40,9 @@ bool ValueMatrix(int[,] matrix)
 
 void ChangePosition(int[,] matrix)
 {
-   for (int i = 0; i < matrix.GetLength(0); i++)
+   for (int i = 0; i < matrix.GetLength(0); i++)// строка
    {
-      for (int j = 0; j < i; j++)
+      for (int j = 0; j <= i; j++)// столбец
       {
          int temp = matrix[i,j];
          matrix[i, j] = matrix[j, i];

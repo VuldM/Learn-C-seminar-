@@ -7,9 +7,9 @@ int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
     int[,] matrix = new int[rows, columns];
     Random rnd = new Random();
 
-    for (int i = 0; i < matrix.GetLength(0); i++) //matrix.GetLength(0) = 3
+    for (int i = 0; i < matrix.GetLength(0); i++) 
     {
-        for (int j = 0; j < matrix.GetLength(1); j++) // matrix.GetLength(1) = 4
+        for (int j = 0; j < matrix.GetLength(1); j++) 
         {
             matrix[i, j] = rnd.Next(min, max + 1);
         }
@@ -37,7 +37,7 @@ void SwapPosition(int[,] matrix)
    int temp = 0;
    for (int j = 0; j < matrix.GetLength(1); j++)
    {
-      temp=matrix[firstPosition, j];
+      temp = matrix[firstPosition, j];
       matrix[firstPosition, j] = matrix[lastPosition, j];
       matrix[lastPosition, j] = temp;
    }
