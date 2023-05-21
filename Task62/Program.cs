@@ -42,7 +42,6 @@ int[,] SpiralFillArray2d(int rows, int columns)
             count++;
             if (arr2d[i, j] > arr2d.Length) return arr2d;
             arr2d[i, j] = count;
-
             j--;
         }
         while (i > m)
@@ -50,7 +49,6 @@ int[,] SpiralFillArray2d(int rows, int columns)
             count++;
             if (arr2d[i, j] > arr2d.Length) return arr2d;
             arr2d[i, j] = count;
-
             i--;
         }
         m++;
