@@ -7,21 +7,21 @@
 int[,] SpiralFillArray2d(int rows, int columns)
 {
     int[,] arr2d = new int[rows, columns];
-    int count = 0;
+    int nextNumber = 0;
     int row = arr2d.GetLength(0);
     int column = arr2d.GetLength(1);
-    int n = 0;
-    int m = 0;
+    int mineCicle = 0;
+    int nullPozition = 0;
     int i = 0;
     int j = 0;
     while (arr2d[i, j] < arr2d.Length)
     {
-        i = n;
+        i = mineCicle;
         while (j < column)
         {
-            count++;
+            nextNumber++;
             if (arr2d[i, j] > arr2d.Length) return arr2d;
-            arr2d[i, j] = count;
+            arr2d[i, j] = nextNumber;
             j++;
         }
         column--;
@@ -29,31 +29,31 @@ int[,] SpiralFillArray2d(int rows, int columns)
         i++;
         while (i < row)
         {
-            count++;
+            nextNumber++;
             if (arr2d[i, j] > arr2d.Length) return arr2d;
-            arr2d[i, j] = count;
+            arr2d[i, j] = nextNumber;
             i++;
         }
         row--;
         i--;
         j--;
-        while (j > m)
+        while (j > nullPozition)
         {
-            count++;
+            nextNumber++;
             if (arr2d[i, j] > arr2d.Length) return arr2d;
-            arr2d[i, j] = count;
+            arr2d[i, j] = nextNumber;
             j--;
         }
-        while (i > m)
+        while (i > nullPozition)
         {
-            count++;
+            nextNumber++;
             if (arr2d[i, j] > arr2d.Length) return arr2d;
-            arr2d[i, j] = count;
+            arr2d[i, j] = nextNumber;
             i--;
         }
-        m++;
+        nullPozition++;
         j++;
-        n++;
+        mineCicle++;
     }
     return arr2d;
 }
@@ -71,5 +71,5 @@ void PrintArray2d(int[,] arr2d)
     }
 
 }
-int[,] spiralArray2d = SpiralFillArray2d(4, 4);
+int[,] spiralArray2d = SpiralFillArray2d(4, 5);
 PrintArray2d(spiralArray2d);

@@ -18,8 +18,6 @@ int[,,] FillArray3d(int rows, int columns, int depth)
             {
                 n = n + 1;
                 arr3d[i, j, k] = n;
-
-
             }
         }
     }
