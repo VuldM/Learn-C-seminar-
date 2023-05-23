@@ -16,5 +16,6 @@ void NaturalNumbers(int num)
         NaturalNumbers(num - 1);
     }
 }
-
+Console.Write($"N = {number} -> '");
 NaturalNumbers(number);
+Console.Write("'");
