@@ -17,4 +17,8 @@ int AskFunction(int n, int m)
 
 
 if (numberM < 0 || numberN < 0) Console.WriteLine("Вы ввели не натуральное число");
-else Console.Write(AskFunction(numberM, numberN));
+else
+{
+    Console.Write($"m = {numberM}, n = {numberN} -> A({numberM}, {numberN}) = ");
+    Console.Write(AskFunction(numberM, numberN));
+}
