@@ -13,6 +13,10 @@ int SumNaturalNumber(int numM, int numN)
     else if (numM > numN) return numM + SumNaturalNumber(numM - 1, numN);
     return numM;
 }
-if (numberM < 0 || numberN < 0) Console.WriteLine("Вы ввели не натуральное число");
-else if (numberM == numberN) Console.WriteLine("Это тоже самое число");
-else Console.Write(SumNaturalNumber(numberM, numberN));
+if (numberM < 0 || numberN < 0) Console.WriteLine($"M = {numberM}; N = {numberN} -> Вы ввели не натуральное число");
+else if (numberM == numberN) Console.WriteLine($"M = {numberM}; N = {numberN} -> Это тоже самое число");
+else
+{
+    Console.Write($"M = {numberM}; N = {numberN} -> ");
+    Console.Write(SumNaturalNumber(numberM, numberN));
+}
