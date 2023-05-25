@@ -12,7 +12,6 @@ int AskFunction(int n, int m)
     if (n == 0) return m + 1;
     else if (m == 0) return AskFunction(n - 1, 1);
     return AskFunction(n - 1, AskFunction(n, m - 1));
-
 }
 
 
